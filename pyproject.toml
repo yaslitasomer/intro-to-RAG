@@ -13,6 +13,7 @@ dependencies = [
     "openai>=2.52.0",
     "python-dotenv>=1.2.2",
     "requests>=2.34.2",
+    "sqlitesearch>=0.3.0",
 ]
 
 [project.scripts]
@@ -21,3 +22,6 @@ intro-to-rag = "intro_to_rag:main"
 [build-system]
 requires = ["uv_build>=0.12.1,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv]
+package = false
