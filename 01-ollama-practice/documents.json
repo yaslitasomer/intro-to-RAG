@@ -1,0 +1,117 @@
+[
+    {
+        "category": "Batman",
+        "documents": [
+            {
+                "section": "Origins",
+                "question": "Who murdered Bruce Wayne's parents?",
+                "text": "Joe Chill is the mugger who murdered Thomas and Martha Wayne in Crime Alley, an event that drove Bruce to become Batman."
+            },
+            {
+                "section": "Allies",
+                "question": "Who was the first Robin?",
+                "text": "Dick Grayson was the first Robin. He later grew up to take on the independent superhero identity of Nightwing."
+            },
+            {
+                "section": "Villains",
+                "question": "What is the true name of the Joker?",
+                "text": "The Joker's true identity remains one of DC Comics' greatest mysteries, though stories like 'The Killing Joke' suggest he was a failed stand-up comedian."
+            },
+            {
+                "section": "Equipment",
+                "question": "What is the Batcave?",
+                "text": "The Batcave is Batman's secret headquarters, located in a massive subterranean cave system beneath Wayne Manor."
+            },
+            {
+                "section": "Lore",
+                "question": "What is the name of the prison for the criminally insane in Gotham?",
+                "text": "Arkham Asylum is the psychiatric hospital and prison where many of Batman's most dangerous foes are incarcerated."
+            }
+        ]
+    },
+    {
+        "category": "Wonder Woman",
+        "documents": [
+            {
+                "section": "Origins",
+                "question": "Where is Wonder Woman from?",
+                "text": "Wonder Woman, also known as Diana Prince, hails from Themyscira, a hidden island nation populated entirely by Amazonian women."
+            },
+            {
+                "section": "Equipment",
+                "question": "What does the Lasso of Truth do?",
+                "text": "The Lasso of Truth is a magical weapon forged by Hephaestus that forces anyone bound by it to tell the absolute truth."
+            },
+            {
+                "section": "Allies",
+                "question": "Who is Wonder Woman's mother?",
+                "text": "Queen Hippolyta is the mother of Diana and the ruler of the Amazons on Themyscira."
+            },
+            {
+                "section": "Villains",
+                "question": "Who is Cheetah?",
+                "text": "Cheetah, often Barbara Ann Minerva, is an archaeologist cursed with the powers and appearance of a human-cheetah hybrid, making her one of Wonder Woman's greatest adversaries."
+            },
+            {
+                "section": "Lore",
+                "question": "Which Greek god gave Diana her powers?",
+                "text": "Diana received her powers from multiple Greek gods, including Demeter (strength), Athena (wisdom), and Hermes (speed)."
+            }
+        ]
+    },
+    {
+        "category": "Superman",
+        "documents": [
+            {
+                "section": "Origins",
+                "question": "What is Superman's birth name and home planet?",
+                "text": "Superman was born as Kal-El on the planet Krypton before it was destroyed."
+            },
+            {
+                "section": "Weaknesses",
+                "question": "What is Superman's primary weakness?",
+                "text": "Superman is highly vulnerable to Kryptonite, radioactive fragments of his destroyed home planet, which drain his powers and can kill him."
+            },
+            {
+                "section": "Allies",
+                "question": "Who is Lois Lane?",
+                "text": "Lois Lane is a star investigative reporter for the Daily Planet and the primary romantic interest, and eventual wife, of Clark Kent (Superman)."
+            },
+            {
+                "section": "Villains",
+                "question": "Who is Lex Luthor?",
+                "text": "Lex Luthor is a billionaire industrialist and a genius inventor who views Superman as an existential threat to humanity, acting as his arch-nemesis."
+            },
+            {
+                "section": "Lore",
+                "question": "Why does Superman get his powers on Earth?",
+                "text": "Superman's Kryptonian physiology absorbs the radiation of Earth's yellow sun, which grants him his extraordinary abilities like flight, super strength, and heat vision."
+            }
+        ]
+    },
+    {
+        "category": "The Flash",
+        "documents": [
+            {
+                "section": "Origins",
+                "question": "How did Barry Allen become The Flash?",
+                "text": "Barry Allen, a police forensic scientist, was struck by a bolt of lightning that threw him into a rack of chemicals, granting him superhuman speed."
+            },
+            {
+                "section": "Lore",
+                "question": "What is the Speed Force?",
+                "text": "The Speed Force is an extra-dimensional energy field that grants all speedsters in the DC Universe their powers and allows them to travel through time."
+            },
+            {
+                "section": "Villains",
+                "question": "Who is the Reverse-Flash?",
+                "text": "Eobard Thawne, the Reverse-Flash, is a time-traveling speedster from the 25th century who is obsessed with Barry Allen and dedicated to ruining his life."
+            },
+            {
+                "section": "Allies",
+                "question": "Who is Wally West?",
+                "text": "Wally West is the nephew of Iris West who gained similar powers to Barry Allen, initially serving as Kid Flash before taking up the mantle of The Flash himself."
+            }
+        ]
+    }
+]
