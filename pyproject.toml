@@ -12,12 +12,14 @@ dependencies = [
     "gitsource>=0.0.5",
     "jupyter>=1.1.1",
     "minsearch>=0.2.0",
+    "onnxruntime>=1.28.0",
     "openai>=2.52.0",
     "psycopg[binary]>=3.3.4",
     "python-dotenv>=1.2.2",
     "requests>=2.34.2",
     "sentence-transformers>=5.6.1",
     "sqlitesearch>=0.3.0",
+    "tokenizers>=0.22.2",
     "toyaikit>=0.0.11",
 ]
 
@@ -38,3 +40,9 @@ torch = { index = "pytorch-cpu" }
 name = "pytorch-cpu"
 url = "https://download.pytorch.org/whl/cpu"
 explicit = true
+
+[dependency-groups]
+dev = [
+    "huggingface-hub>=1.26.0",
+    "jupyter>=1.1.1",
+]
