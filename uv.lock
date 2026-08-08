@@ -735,6 +735,7 @@ dependencies = [
     { name = "minsearch" },
     { name = "onnxruntime" },
     { name = "openai" },
+    { name = "pandas" },
     { name = "psycopg", extra = ["binary"] },
     { name = "python-dotenv" },
     { name = "requests" },
@@ -742,6 +743,7 @@ dependencies = [
     { name = "sqlitesearch" },
     { name = "tokenizers" },
     { name = "toyaikit" },
+    { name = "tqdm" },
 ]
 
 [package.dev-dependencies]
@@ -758,6 +760,7 @@ requires-dist = [
     { name = "minsearch", specifier = ">=0.2.0" },
     { name = "onnxruntime", specifier = ">=1.28.0" },
     { name = "openai", specifier = ">=2.52.0" },
+    { name = "pandas", specifier = ">=3.0.5" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.4" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "requests", specifier = ">=2.34.2" },
@@ -765,6 +768,7 @@ requires-dist = [
     { name = "sqlitesearch", specifier = ">=0.3.0" },
     { name = "tokenizers", specifier = ">=0.22.2" },
     { name = "toyaikit", specifier = ">=0.0.11" },
+    { name = "tqdm", specifier = ">=4.70.0" },
 ]
 
 [package.metadata.requires-dev]
