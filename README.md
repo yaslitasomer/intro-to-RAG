@@ -11,7 +11,7 @@ This repository serves as a comprehensive workspace documenting the end-to-end i
 
 The repository is organized into progressive modules, each focusing on a core aspect of LLM engineering:
 
-* **`01-agentic-rag/` & `01-ollama-practice/**`
+* **`01-agentic-rag/`** & **`01-ollama-practice/`**
 * Contains the foundational implementations of RAG architectures.
 * Includes local LLM deployment strategies (utilizing Ollama) and the development of initial agentic loops for contextual data retrieval.
 
@@ -50,8 +50,8 @@ Ensure you have Python installed (version specified in `.python-version`) along 
 Clone the repository and install the project dependencies:
 
 ```bash
-git clone <your-repository-url>
-cd <repository-directory>
+git clone https://github.com/yaslitasomer/intro-to-RAG
+cd intro-to-RAG
 uv sync
 
 ```
