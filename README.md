@@ -26,6 +26,12 @@ The repository is organized into progressive modules, each focusing on a core as
 * Utilizes Kestra and Docker to design, automate, and orchestrate complex LLM pipelines, including web-researching agents and multi-agent systems.
 
 
+* **`05-monitoring/`**
+* Implements a complete monitoring and observability stack for RAG applications.
+* Containerizes a Streamlit web interface alongside PostgreSQL for conversation/feedback storage and Grafana for real-time dashboard visualization.
+* Includes infrastructure-as-code deployments via Docker Compose and scripts for simulating live user data.
+
+
 * **`homeworks/`**
 * Contains the completed practical assignments, evaluations, and module-specific deliverables.
 
@@ -33,17 +39,18 @@ The repository is organized into progressive modules, each focusing on a core as
 
 ## Tech Stack & Tooling
 
-* **Languages:** Python, Jupyter Notebook
+* **Languages & Frameworks:** Python, Jupyter Notebook, Streamlit
 * **Environment & Package Management:** Managed via `uv` (`pyproject.toml` and `uv.lock`) and `.python-version`. Designed for compatibility with WSL/Linux environments.
-* **Orchestration & Containerization:** Kestra, Docker, Docker Compose
+* **Orchestration, Containerization & Databases:** Kestra, Docker, Docker Compose, PostgreSQL
+* **Observability & Monitoring:** Grafana
 * **AI Models & APIs:** Google Gemini, local models via Ollama, Tavily (Web Search API)
-* **Core Concepts:** RAG, Vector Databases, Hybrid Search, Autonomous Agents, Workflow Orchestration
+* **Core Concepts:** RAG, Vector Databases, Hybrid Search, Autonomous Agents, Workflow Orchestration, LLM Evaluation & Monitoring
 
 ## Getting Started
 
 ### Prerequisites
 
-Ensure you have Python installed (version specified in `.python-version`) along with `uv` for dependency management. Docker and Docker Compose are required for the orchestration module.
+Ensure you have Python installed (version specified in `.python-version`) along with `uv` for dependency management. Docker and Docker Compose are required for the orchestration and monitoring modules.
 
 ### Installation
 
@@ -62,12 +69,21 @@ Each directory contains specific instructions and codebases for its respective m
 
 * For standard Python scripts and Jupyter Notebooks (Modules 1 and 2), navigate to the specific directory and execute the files within the configured virtual environment.
 * For the orchestration workflows (Module 3), navigate to `03-orchestration/` and initialize the Docker containers:
-
 ```bash
 cd 03-orchestration
 docker compose up -d
 
 ```
+
+
+* For the complete monitoring and UI stack (Module 5), run the following from the root directory to build and start the Streamlit, PostgreSQL, and Grafana containers:
+```bash
+docker-compose up -d --build
+
+```
+
+
+*(Note: For the initial setup, you need to build the database tables by running `POSTGRES_HOST=localhost uv run python 05-monitoring/db_init.py` before generating mock data).*
 
 ## Author
 
