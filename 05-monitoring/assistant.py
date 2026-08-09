@@ -3,17 +3,18 @@ import sys
 
 from openai import OpenAI
 from ingest import load_faq_data, build_index
-from rag import RAGBase
+from metrics import RAGWithMetrics
+from db_save import save_conversation
 
 # Create assistant
 def create_assistant():
     documents = load_faq_data()
     index = build_index(documents)
     
-    return RAGBase(
+    return RAGWithMetrics(
         index=index,
         llm_client=OpenAI(
-            base_url="http://localhost:11434/v1",
+            base_url="http://host.docker.internal:11434/v1",
             api_key="ollama"  
         )
     )
@@ -28,4 +29,6 @@ if __name__ == "__main__":
 
     answer = assistant.rag(query)
     print(answer)
+    
+    save_conversation(assistant.last_call, query, "llm-zoomcamp")
     
